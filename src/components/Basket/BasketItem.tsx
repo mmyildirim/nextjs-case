@@ -14,6 +14,7 @@ import IconButton from "@mui/material/IconButton";
 interface IBasketItemProps {
   basketItem: IBasketItem;
 }
+
 const BasketItem = (props: IBasketItemProps) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
