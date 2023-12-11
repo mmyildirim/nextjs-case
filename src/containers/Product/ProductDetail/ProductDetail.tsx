@@ -8,7 +8,6 @@ import Box from "@mui/material/Box";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
-import { Description } from "@mui/icons-material";
 
 interface IProductDetailProps {
   data: IProductItem;
