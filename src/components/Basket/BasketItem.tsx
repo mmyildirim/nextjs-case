@@ -2,7 +2,6 @@ import { IProductItem } from "@/models/product";
 import { IBasketItem } from "@/models/basket";
 import { useCart } from "@/context/CartContext";
 import { formatNumber } from "@/utils/CartUpdate";
-import { ToastContainer, toast } from "react-toastify";
 import Image from "next/image";
 import { Card, Grid, Typography, Button, Container } from "@mui/material";
 import { useTheme } from "@mui/system";
@@ -12,6 +11,8 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Head from "next/head";
 import { Description } from "@mui/icons-material";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface IBasketItemProps {
   basketItem: IBasketItem;
