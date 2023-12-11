@@ -13,15 +13,15 @@ const ProductBox = (props: IProductBox) => {
   return (
     <>
       <Box sx={{ width: "100%" }} paddingY={4}>
-        <Card>
-          <Link href={`products/${id}`}>
+        <Card className="productBoxContainer">
+          <Link href={`products/${id}`} title={title}>
             <Box
               sx={{
                 position: "relative",
                 height: { xs: "225px", md: "250px" },
               }}
             >
-              <Image fill={true} objectFit="contain" alt="test" src={image} />
+              <Image fill={true} objectFit="contain" alt={title} src={image} />
             </Box>
             <Divider />
             <Box

@@ -113,6 +113,7 @@ const Header: React.FC<IHaderProps> = (props) => {
                     xs: "none",
                     sm: "flex",
                   },
+                  alignItems: { xs: "initial", sm: "center" },
                 }}
               >
                 <Box>
@@ -126,8 +127,8 @@ const Header: React.FC<IHaderProps> = (props) => {
                 </Box>
                 <Box>
                   <Link href="/cart">
-                    <Badge badgeContent={totalQuantity} color="secondary">
-                      <ShoppingCartIcon />
+                    <Badge badgeContent={totalQuantity}>
+                      <ShoppingCartIcon sx={{ color: "#fff" }} />
                     </Badge>
                   </Link>
                 </Box>
@@ -144,8 +145,8 @@ const Header: React.FC<IHaderProps> = (props) => {
             }}
           >
             <Link href="/cart">
-              <Badge badgeContent={totalQuantity} color="secondary">
-                <ShoppingCartIcon />
+              <Badge badgeContent={totalQuantity}>
+                <ShoppingCartIcon sx={{ color: "#fff" }} />
               </Badge>
             </Link>
           </Box>
